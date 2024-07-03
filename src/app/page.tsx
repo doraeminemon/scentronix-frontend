@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { MdAdd, MdPrint, MdMicrowave, MdSchedule, MdChevronRight } from 'react-icons/md'
+import { Link } from "@/components/Link";
+import { Step } from "@/components/Step";
 
 export default function Home() {
   return (
     <main className="">
       <div className="navbar w-full py-6 flex lg:px-16 px-8">
         <div className="flex items gap-4 max-w-screen-lg">
-          <a href="/" className="uppercase">Shop</a>
-          <a href="/" className="uppercase underline decoration-red-500 underline-offset-8">Recipes</a>
-          <a href="/" className="uppercase">Learn</a>
-          <a href="/" className="uppercase">About</a>
-          <a href="/" className="uppercase">Blog</a>
+          <Link href="/">Shop</Link>
+          <Link href="/" highlighted>Recipes</Link>
+          <Link href="/">Learn</Link>
+          <Link href="/">About</Link>
+          <Link href="/">Blog</Link>
         </div>
       </div>
       <div className="submenu lg:px-16 px-8 py-4 bg-[#F6F4EE]">
@@ -38,18 +40,9 @@ While the recipe calls for a 50/50 mix of flours (all-purpose and whole wheat), 
             <div className="item flex items-center">
               <MdSchedule size={30}/>
             </div>
-            <div className="item">
-              <div className="step uppercase text-xs">prep</div>
-              <div className="time">10 mins</div>
-            </div>
-            <div className="item">
-              <div className="step uppercase text-xs">bake</div>
-              <div className="time">1 hr to 1 hr 15 mins</div>
-            </div>
-            <div className="item">
-              <div className="step uppercase text-xs">total</div>
-              <div className="time">1 hr 10 mins</div>
-            </div>
+            <Step name='prep'>10 mins</Step>
+            <Step name='bake'>1 hr to 1 hr 15 mins</Step>
+            <Step name='total'>1 hr 10 mins</Step>
           </div>
           <div className="more-items flex gap-4 flex-wrap">
             <div className="item flex items-center">
