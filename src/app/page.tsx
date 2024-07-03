@@ -2,6 +2,7 @@ import Image from "next/image";
 import { MdAdd, MdPrint, MdMicrowave, MdSchedule, MdChevronRight } from 'react-icons/md'
 import { Link } from "@/components/Link";
 import { Step } from "@/components/Step";
+import { Button } from "@/components/Button";
 
 export default function Home() {
   return (
@@ -53,18 +54,8 @@ While the recipe calls for a 50/50 mix of flours (all-purpose and whole wheat), 
               <div className="time">1 loaf, 12 generous servings</div>
             </div>
             <div className="buttons flex gap-2 flex-grow justify-between lg:justify-start">
-              <button className="button uppercase border border-red-500 rounded-md px-3 text-xs lg:text-sm flex gap-2 items-center py-2 w-1/2">
-                <MdAdd className="lg:text-[20px]"/>
-                <div className="flex justify-center flex-grow">
-                  Save recipe
-                </div>
-              </button>
-              <button className="button uppercase border border-red-500 rounded-md px-3 text-xs lg:text-sm flex gap-2 items-center py-2 w-1/2">
-                <MdPrint className="lg:text-[20px]"/>
-                <div className="flex justify-center flex-grow">
-                  Print
-                </div>
-              </button>
+              <Button icon={<MdAdd className="lg:text-[20px]"/>}>Save recipe</Button>
+              <Button icon={<MdPrint className="lg:text-[20px]"/>}>Print</Button>
             </div>
           </div>
         </div>
