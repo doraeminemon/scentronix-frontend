@@ -17,3 +17,4 @@
 - Using React
 - Using Material UI ( Material Icons ). From the project I don't feel the need of using any MaterialUI component or split things into component just yet. If the need for reuse arise I would use it.
 - I don't know what to do with API data / setup. However, you can look at another one of my project which also listed publicly [here](https://github.com/doraeminemon/traffic-weather-ui/tree/main) to get an idea how I would implement it.
+- The website is responsive for 2 breakpoints: large ( desktop version ) and mobile
