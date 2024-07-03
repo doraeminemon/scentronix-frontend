@@ -49,10 +49,7 @@ While the recipe calls for a 50/50 mix of flours (all-purpose and whole wheat), 
             <div className="item flex items-center">
               <MdMicrowave size={30} />
             </div>
-            <div className="item">
-              <div className="step uppercase text-xs">yield</div>
-              <div className="time">1 loaf, 12 generous servings</div>
-            </div>
+            <Step name="yield">1 loaf, 12 generous servings</Step>
             <div className="buttons flex gap-2 flex-grow justify-between lg:justify-start">
               <Button icon={<MdAdd className="lg:text-[20px]"/>}>Save recipe</Button>
               <Button icon={<MdPrint className="lg:text-[20px]"/>}>Print</Button>
